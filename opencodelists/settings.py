@@ -154,7 +154,7 @@ WSGI_APPLICATION = "opencodelists.wsgi.application"
 # from coding_systems.versioning.apps)
 DATABASES = {
     "default": env.dj_db_url("DATABASE_URL", "sqlite:///db.sqlite3"),
-    "OPTIONS": {"timeout": 45},
+    "OPTIONS": {"timeout": 90},
 }
 
 DATABASE_DIR = Path(
